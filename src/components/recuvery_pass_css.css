@@ -1,0 +1,98 @@
+.wrapper {
+  display: flex;
+  margin-left: 17%;
+  margin-right: 17%;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.content_form1 {
+  margin: 0 auto;
+  text-align: left;
+  display: block;
+}
+
+.content_form2 {
+  margin: 0 auto;
+  text-align: left;
+  display: none;
+}
+
+.rec_input {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 298px;
+  height: 30px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.rec_pass {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 298px;
+  height: 30px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.rec_code_button {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #116E77;
+  color: #fff;
+  width: 200px;
+  height: 42px;
+  font-size: 18px;
+  margin-top: 5px;
+  float: left;
+  cursor: pointer;
+}
+
+#error {
+  color: red;
+  font-size: 18px;
+  display: none;
+}
+
+#error_pass {
+  color: red;
+  font-size: 18px;
+  margin: 5px 0 5px 0;
+  display: none;
+}
+
+.rec_code {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 90px;
+  height: 30px;
+  font-size: 16px;
+  margin-top: 5px;
+  float: right;
+}
+
+.rec_next {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #C5C5C5;
+  color: #fff;
+  width: 310px;
+  height: 42px;
+  font-size: 18px;
+  margin-top: 5px;
+  float: left;
+  cursor: pointer;
+}
+
+.rec_save {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #116E77;
+  color: #fff;
+  width: 310px;
+  height: 42px;
+  font-size: 18px;
+  margin-top: 15px;
+  cursor: pointer;
+}
