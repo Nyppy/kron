@@ -11,7 +11,7 @@ import visa from '../../assets/img/visa.png';
 import mastercard from '../../assets/img/mastercard_(1).png';
 import mir from '../../assets/img/mir.png';
 
-import '../../assets/syles/style.css';
+import '../../assets/styles/style.css';
 
 const Footer = () => {
   return (

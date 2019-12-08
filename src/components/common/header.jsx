@@ -6,7 +6,7 @@ import logo_ship from '../../assets/img/logo-ship.png';
 import logo_food from '../../assets/img/logo-food.png';
 import account from '../../assets/img/account-people.png';
 
-import '../../assets/syles/style.css';
+import '../../assets/styles/style.css';
 
 const Header = () => {
   return (
@@ -41,7 +41,7 @@ const Header = () => {
             </a>
           </div>
         </div>
-        <a href="#" className="header__account">
+        <a href="/private_office" className="header__account">
           <img className="account__img" src={account} alt="people" />
           <span>Личный кабинет</span>
         </a>

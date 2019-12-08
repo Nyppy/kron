@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Login from './pages/login';
 import Registry from './pages/registry';
 import RecoveryPass from './pages/recovery-pass';
+import PrivatOffice from './pages/private-office';
 
 import './App.css';
 
@@ -19,6 +20,9 @@ function App() {
           </Route>
           <Route path='/recuvery'>
             <RecoveryPass />
+          </Route>
+          <Route path='/private_office'>
+            <PrivatOffice />
           </Route>
       </Switch>
     </Router>
