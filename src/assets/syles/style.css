@@ -82,7 +82,7 @@
 }
 
 .navbar {
-  background: url("./img/nav-back.png");
+  background: url("../img/nav-back.png");
   width: 100%;
 }
 
@@ -117,7 +117,7 @@
 }
 
 .footer {
-  background-image: url("./img/footer-back.png");
+  background-image: url("../img/footer-back.png");
   min-height: 664px;
 }
 

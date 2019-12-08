@@ -1,23 +1,25 @@
-import React from "react";
-import "./register_css.css";
-import {Header, Footer} from "./component";
+import React, {Component} from "react";
+import {Header, Footer} from "../../components/common";
 import InputMask from 'react-input-mask';
-import cloud from "./img/cloud.png";
-import logo from './img/logo-kron.png';
-import automobile from './img/automobile.png';
-import cinema from './img/cinema.png';
-import clipboard from './img/clipboard.png';
-import website from './img/website.png';
-import mobile_network from './img/Mobile-network.png';
-import group_1 from './img/Group-1.png';
-import group_2 from './img/Group-2.png';
-import group_3 from './img/Group-3.png';
-import kron_app from './img/kron-app.png';
-import app_google from './img/app-google.png';
-import app_store from './img/app-store.png';
+
+import cloud from "../../assets/img/cloud.png";
+import automobile from '../../assets/img/automobile.png';
+import cinema from '../../assets/img/cinema.png';
+import clipboard from '../../assets/img/clipboard.png';
+import website from '../../assets/img/website.png';
+import mobile_network from '../../assets/img/Mobile-network.png';
+import group_1 from '../../assets/img/Group-1.png';
+import group_2 from '../../assets/img/Group-2.png';
+import group_3 from '../../assets/img/Group-3.png';
+import kron_app from '../../assets/img/kron-app.png';
+import app_google from '../../assets/img/app-google.png';
+import app_store from '../../assets/img/app-store.png';
 
 
-class Content extends React.Component{
+import "./registry.css";
+
+
+class Content extends Component{
   constructor(props) {
     super(props);
     this.state = {

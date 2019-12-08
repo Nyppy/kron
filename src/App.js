@@ -1,8 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import MainLogin from './components/login';
-import MainRegister from './components/register';
-import MainRecuveryPass from './components/recuvery_pass';
+
+import Login from './pages/login';
+import Registry from './pages/registry';
+import RecoveryPass from './pages/recovery-pass';
+
 import './App.css';
 
 function App() {
@@ -10,13 +12,13 @@ function App() {
     <Router>
       <Switch>
           <Route path='/login'>
-            <MainLogin />
+            <Login />
           </Route>
           <Route path='/register'>
-            <MainRegister />
+            <Registry />
           </Route>
           <Route path='/recuvery'>
-            <MainRecuveryPass />
+            <RecoveryPass />
           </Route>
       </Switch>
     </Router>
