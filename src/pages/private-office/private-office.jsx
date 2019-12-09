@@ -101,23 +101,17 @@ class PrivateMain extends Component {
                             <ImagesProfile />
                             <ChangeDataProfile />
                         </div>
-
                         <div className="block-priv">
                             <KronApp />
                             <Info />
                         </div>
-
                         <div className="block-priv">
                             <ChangePassword />
                             <Question />
                             <Coupon />
                         </div>
-
                     </div>
-
-                    <div className="block-end-priv">
-                        <History />
-                    </div>
+                    <History />
                 </div>
             </div>
         )

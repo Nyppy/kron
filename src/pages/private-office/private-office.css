@@ -3,6 +3,7 @@
     padding-top: 20px;
     display: flex;
     justify-content: space-between;
+    height: 618px;
 }
 
 .cont-priv {
@@ -10,6 +11,7 @@
     flex-flow: column;
     width: 60%;
     margin: 0;
+    height: 618px;
 }
 
 .block-priv {
@@ -18,50 +20,46 @@
     margin: 0;
 }
 
-.block-end-priv {
-    width: 40%;
-}
-
 /* Фото профиля и другие данные */
 .wrapper_img_profile {
     width: 31%;
-    height: 250px;
+    height: 220px;
     border-radius: 10px;
     background-color: #fff;
-    margin: 0 2% 2% 0;
+    margin: 0 2% 13px 0;
 }
 
 /* Смена личных двнных */
 .wrapper_сhange_data {
     width: 65%;
-    height: 250px;
+    height: 220px;
     border-radius: 10px;
     background-color: #fff;
-    margin: 0 0 2% 0;
+    margin: 0 0 13px 0;
 }
 
 /* Приложения крона */
 .wrapper_app {
     width: 31%;
-    height: 100px;
+    height: 150px;
     border-radius: 10px;
     background-color: #fff;
-    margin: 0 2% 2% 0;
+    margin: 0 2% 13px 0;
 }
 
 /* Информация */
 .wrapper_info {
     width: 65%;
-    height: 100px;
+    height: 150px;
     border-radius: 10px;
     background-color: #fff;
-    margin: 0 0 2% 0;
+    margin: 0 0 13px 0;
 }
 
 /* Смена пароля */
 .wrapper_change_pass {
     width: 31%;
-    height: 250px;
+    height: 220px;
     border-radius: 10px;
     background-color: #fff;
     margin: 0 2% 0 0;
@@ -70,7 +68,7 @@
 /* Вопросы */
 .wrapper_question {
     width: 31.5%;
-    height: 250px;
+    height: 220px;
     border-radius: 10px;
     background-color: #fff;
     margin: 0 2% 0 0;
@@ -79,7 +77,7 @@
 /* Купоны */
 .wrapper_coupon {
     width: 31.5%;
-    height: 250px;
+    height: 220px;
     border-radius: 10px;
     background-color: #fff;
     margin: 0 2% 0 0;
@@ -87,8 +85,10 @@
 
 /* История */
 .wrapper_history {
-    width: 100%;
-    min-height: 630px;
+    flex: 1 0 auto;
+    width: 36vw;
+    /* height: auto;
+    min-height: 618px; */
     border-radius: 10px;
     background-color: #fff;
 }
