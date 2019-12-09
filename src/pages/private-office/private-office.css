@@ -1,6 +1,94 @@
-.wrapper-content {
+.wrapper-content-priv {
     margin: 0 5% 0 5%;
     padding-top: 20px;
-    background-color: red;
+    display: flex;
+    justify-content: space-between;
 }
 
+.cont-priv {
+    display: flex;
+    flex-flow: column;
+    width: 60%;
+    margin: 0;
+}
+
+.block-priv {
+    display: flex;
+    flex-flow: wrap;
+    margin: 0;
+}
+
+.block-end-priv {
+    width: 40%;
+}
+
+/* Фото профиля и другие данные */
+.wrapper_img_profile {
+    width: 31%;
+    height: 250px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 0 2% 2% 0;
+}
+
+/* Смена личных двнных */
+.wrapper_сhange_data {
+    width: 65%;
+    height: 250px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 0 0 2% 0;
+}
+
+/* Приложения крона */
+.wrapper_app {
+    width: 31%;
+    height: 100px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 0 2% 2% 0;
+}
+
+/* Информация */
+.wrapper_info {
+    width: 65%;
+    height: 100px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 0 0 2% 0;
+}
+
+/* Смена пароля */
+.wrapper_change_pass {
+    width: 31%;
+    height: 250px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 0 2% 0 0;
+}
+
+/* Вопросы */
+.wrapper_question {
+    width: 31.5%;
+    height: 250px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 0 2% 0 0;
+}
+
+/* Купоны */
+.wrapper_coupon {
+    width: 31.5%;
+    height: 250px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 0 2% 0 0;
+}
+
+/* История */
+.wrapper_history {
+    width: 100%;
+    min-height: 630px;
+    border-radius: 10px;
+    background-color: #fff;
+}

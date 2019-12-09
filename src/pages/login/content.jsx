@@ -35,15 +35,14 @@ class Content extends Component {
     // TODO: отправка данных на сервер и валидация логина и пароля
     if (login === "" || password === "") {
       console.log("loginValidateError", this.loginValidateError);
-      this.loginValidateError.style.display = "block";
+      this.loginValidateError.current.style.display = "block";
 
       setTimeout(
         "document.getElementById('input_error').style.display = 'none'",
         3000
       );
-    }
-    if (login !== "admin" || password !== "admin") {
-      this.loginValidateAdminError.style.display = "block";
+    } else if (login !== "admin" || password !== "admin") {
+      this.loginValidateAdminError.current.style.display = "block";
 
       setTimeout(
         "document.getElementById('input_error_pass').style.display = 'none'",

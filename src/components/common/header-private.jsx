@@ -13,7 +13,7 @@ const HeaderPrivate = (props) => {
             </div>
 
             <div className="private-users-img">
-                <div class="user-data">
+                <div className="user-data">
                     <span className="user-name">{props.name}</span>
                     <span className="status">{props.status}</span>
                 </div>

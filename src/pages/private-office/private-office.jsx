@@ -7,6 +7,8 @@ import {HeaderPrivate} from '../../components/common'
 import "./private-office.css";
 
 class ImagesProfile extends Component {
+    
+
     render() {
         return(
             <div className="wrapper_img_profile">
@@ -19,8 +21,8 @@ class ImagesProfile extends Component {
 class ChangeDataProfile extends Component {
     render() {
         return(
-            <div className="wrapper_hange_data">
-                <p>Смена личных данных</p>
+            <div className="wrapper_сhange_data">
+                Смена личных данных
             </div>
         )
     }
@@ -30,7 +32,7 @@ class History extends Component {
     render() {
         return(
             <div className="wrapper_history">
-                <p>История</p>
+                История
             </div>
         )
     }
@@ -40,7 +42,7 @@ class Question extends Component {
     render() {
         return(
             <div className="wrapper_question">
-                <p>Вопросы</p>
+                Вопросы
             </div>
         )
     }
@@ -50,7 +52,7 @@ class ChangePassword extends Component {
     render() {
         return(
             <div className="wrapper_change_pass">
-                <p>Смена пароля</p>
+                Смена пароля
             </div>
         )
     }
@@ -60,7 +62,7 @@ class KronApp extends Component {
     render() {
         return(
             <div className="wrapper_app">
-                <p>Приложения крон</p>
+                Приложения крон
             </div>
         )
     }
@@ -69,8 +71,8 @@ class KronApp extends Component {
 class Info extends Component {
     render() {
         return(
-            <div className="wrapper_ifo">
-                <p>Информация</p>
+            <div className="wrapper_info">
+                Информация
             </div>
         )
     }
@@ -80,7 +82,7 @@ class Coupon extends Component {
     render() {
         return(
             <div className="wrapper_coupon">
-                <p>Купон</p>
+                Купон
             </div>
         )
     }
@@ -91,10 +93,31 @@ class PrivateMain extends Component {
     
     render() {
         return(
-            <div>
+            <div style={{backgroundColor: '#ccc', minHeight: '860px'}}>
                 <HeaderPrivate img={temp_img} name='Иванов Иван' status='Водитель' />
-                <div className="wrapper-content">
-                    <ImagesProfile />
+                <div className="wrapper-content-priv">
+                    <div className="cont-priv">
+                        <div className="block-priv">
+                            <ImagesProfile />
+                            <ChangeDataProfile />
+                        </div>
+
+                        <div className="block-priv">
+                            <KronApp />
+                            <Info />
+                        </div>
+
+                        <div className="block-priv">
+                            <ChangePassword />
+                            <Question />
+                            <Coupon />
+                        </div>
+
+                    </div>
+
+                    <div className="block-end-priv">
+                        <History />
+                    </div>
                 </div>
             </div>
         )

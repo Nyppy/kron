@@ -28,10 +28,12 @@ class Content extends React.Component {
     }
   };
 
-  sendCode() {
+  sendCode = (e) => {
     // TODO: отправка телефона
-    if (this.state.phone.length === 16) {
-      console.log(this.state.phone);
+    const {phone} = this.state
+
+    if (phone.length === 16) {
+      console.log(phone);
     } else {
       document.getElementById("error").style.display = "block";
       setTimeout(
@@ -41,7 +43,7 @@ class Content extends React.Component {
     }
   }
 
-  next() {
+  next = (e) => {
     // TODO: проверка кода
     document.getElementById("content_form1").style.display = "none";
     document.getElementById("content_form2").style.display = "block";
@@ -55,7 +57,7 @@ class Content extends React.Component {
     this.setState({ ...this.state,pass2: e.target.value });
   };
 
-  save() {
+  save = (e) => {
     const {pass1, pass2} = this.state;
 
     // TODO: отправка пароля на сервер
