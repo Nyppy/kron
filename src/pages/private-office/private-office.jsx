@@ -1,18 +1,37 @@
 import React, {Component} from 'react';
 
-import temp_img from '../../assets/img/logo-car.png';
+import temp_img from '../../assets/img/temp.png';
 
 import {HeaderPrivate} from '../../components/common'
+import InputMask from 'react-input-mask';
 
 import "./private-office.css";
 
 class ImagesProfile extends Component {
-    
 
     render() {
+        const {name, surname, id, lvl} = this.props.data
+        const img = this.props.img
         return(
             <div className="wrapper_img_profile">
-                Фото профиля
+                <span style={{color: "#194146",fontSize: '18px'}}>Фото профиля</span>
+                <div className="img-profile-data">
+                    <img className="img-profile" src={img} alt=""/>
+                    <div className="user-data-content"> 
+                        <span className="user-name_">{name}</span>
+                        <span className="user-surname">{surname}</span>
+                        <span className="user-id">Ваш ID: {id}</span>
+                        <span className="user-lvl">Рейтинг: {lvl}/5</span>
+                    </div>
+                </div>
+                <input type="button" className="custom-file-input" value="Выбрать фото"/>
+                <div className="profile-data-info"> 
+                    <span>Внимание фотография должна быть:<br/>
+                        - Без очков<br/>
+                        - Только ваше фото<br/>
+                        - Фото лица
+                    </span>
+                </div>
             </div>
         )
     }
@@ -22,7 +41,40 @@ class ChangeDataProfile extends Component {
     render() {
         return(
             <div className="wrapper_сhange_data">
-                Смена личных данных
+                <span style={{color: "#194146",fontSize: '18px'}}>Изменение личных данных</span>
+                <div className="change-data-position">
+                    <div className="change-data-1">
+                        <input type="text" className="new-name" placeholder="Ваше имя *" required/>
+                        <input type="text" className="new-surname" placeholder="Ваша фамилия *" required/>
+                        <InputMask mask="+7(999)999-99-99" className="new-phone" maskChar={null} required placeholder="Ваш телефон *"/>
+                        <div style={{display: 'flex', flexDirection: 'row', width: '100%'}}>
+                            <input className="send-code" type="button" value="Отправить SMS"/>
+                            <InputMask mask="999999" className="new-code" maskChar={null} required placeholder="Код SMS"/>
+                        </div>
+                        <span>
+                            <input className="politics" type="checkbox" defaultChecked required/>
+                            <span style={{fontSize: "15px"}}>Я принимаю условия<br/></span>
+                            <a href="" style={{fontSize: "15px"}}>«‎Соглашение на обработку персональных данных»‎</a>
+                        </span> 
+                        <input type="button" className="new-save" value="Сохранить изменения"/>
+                    </div>
+                    <div className="change-data-2">
+                        <input type="text" className="new-email" placeholder="Ваш e-mail *" required/>
+                        <input type="text" className="new-city" placeholder="Город *" required/>
+                        <input type="text" className="new-address" placeholder="Адрес *" required/>
+                        {/* <div style={{marginBottom: "5px", width: "100%"}}>
+                            <input className="new-date" required type="date"/>
+                            <div style={{marginTop: "10px", fontSize: "18px"}}>
+                                <input type="radio" defaultChecked onChange={() => {this.gender('male')}} name="sex"/>муж.
+                                <input style={{marginLeft: "20px"}} onChange={() => {this.gender('female')}} type="radio" name="sex"/>жен.
+                            </div>
+                        </div> */}
+                        {/* <div style={{display: 'flex', flexDirection: 'row'}}>
+                            <input type="button" className="new-button-change" value="Редактировать"/>
+                            <input type="button" className="dell-account" value="Удалить аккаунт"/>
+                        </div> */}
+                    </div>
+                </div>
             </div>
         )
     }
@@ -90,15 +142,16 @@ class Coupon extends Component {
 
 class PrivateMain extends Component {
     // ADD Передает данные в шапку: фото пользователя, имя, фамилия, статус(тип)
-    
+    user_data = {name: 'Иван', surname: 'Иванов', status: 'Водитель', id: '741501', lvl: '4'}
+
     render() {
         return(
             <div style={{backgroundColor: '#ccc', minHeight: '860px'}}>
-                <HeaderPrivate img={temp_img} name='Иванов Иван' status='Водитель' />
+                <HeaderPrivate img={temp_img} data={this.user_data} />
                 <div className="wrapper-content-priv">
                     <div className="cont-priv">
                         <div className="block-priv">
-                            <ImagesProfile />
+                            <ImagesProfile img={temp_img} data={this.user_data}  />
                             <ChangeDataProfile />
                         </div>
                         <div className="block-priv">

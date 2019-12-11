@@ -14,8 +14,8 @@ const HeaderPrivate = (props) => {
 
             <div className="private-users-img">
                 <div className="user-data">
-                    <span className="user-name">{props.name}</span>
-                    <span className="status">{props.status}</span>
+                    <span className="user-name">{props.data.name} {props.data.surname}</span>
+                    <span className="status">{props.data.status}</span>
                 </div>
                 
                 <img src={props.img} alt=""/>

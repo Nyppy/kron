@@ -87,7 +87,7 @@ class Content extends Component{
             <input className="code_button" type="button" value="Отправить SMS-код"/>
             <div style={{display: "flex"}}>
               <InputMask mask="999999" ref={ref => this.code = ref} className="code" maskChar={null} required placeholder="Код SMS"/>
-              <input type="button" onClick={this.validForm} className="register" value="Зарегестрироваться"/>
+              <input type="button" onClick={this.validForm} className="register" value="Зарегистрироваться"/>
             </div>
           </form>
         </div>
