@@ -47,7 +47,7 @@ class ChangeDataProfile extends Component {
                         <input type="text" className="new-name" placeholder="Ваше имя *" required/>
                         <input type="text" className="new-surname" placeholder="Ваша фамилия *" required/>
                         <InputMask mask="+7(999)999-99-99" className="new-phone" maskChar={null} required placeholder="Ваш телефон *"/>
-                        <div style={{display: 'flex', flexDirection: 'row', width: '100%'}}>
+                        <div style={{ width: '100%'}}>
                             <input className="send-code" type="button" value="Отправить SMS"/>
                             <InputMask mask="999999" className="new-code" maskChar={null} required placeholder="Код SMS"/>
                         </div>
@@ -56,24 +56,22 @@ class ChangeDataProfile extends Component {
                             <span style={{fontSize: "15px"}}>Я принимаю условия<br/></span>
                             <a href="" style={{fontSize: "15px"}}>«‎Соглашение на обработку персональных данных»‎</a>
                         </span> 
-                        <input type="button" className="new-save" value="Сохранить изменения"/>
+                        
                     </div>
                     <div className="change-data-2">
                         <input type="text" className="new-email" placeholder="Ваш e-mail *" required/>
                         <input type="text" className="new-city" placeholder="Город *" required/>
                         <input type="text" className="new-address" placeholder="Адрес *" required/>
-                        {/* <div style={{marginBottom: "5px", width: "100%"}}>
-                            <input className="new-date" required type="date"/>
-                            <div style={{marginTop: "10px", fontSize: "18px"}}>
-                                <input type="radio" defaultChecked onChange={() => {this.gender('male')}} name="sex"/>муж.
-                                <input style={{marginLeft: "20px"}} onChange={() => {this.gender('female')}} type="radio" name="sex"/>жен.
-                            </div>
-                        </div> */}
-                        {/* <div style={{display: 'flex', flexDirection: 'row'}}>
-                            <input type="button" className="new-button-change" value="Редактировать"/>
-                            <input type="button" className="dell-account" value="Удалить аккаунт"/>
-                        </div> */}
+                        <input className="new-date" required type="date"/>
+                        <select className="new-select">
+                            <option>Мужчина</option>
+                            <option>Женщина</option>
+                        </select>
                     </div>
+                </div>
+                <div style={{display: 'flex', justifyContent: 'space-between'}}>
+                    <input type="button" className="new-save" value="Сохранить изменения"/>
+                    <input type="button" className="dell-account" value="Удалить аккаунт"/>
                 </div>
             </div>
         )

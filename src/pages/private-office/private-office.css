@@ -47,7 +47,7 @@
 
 .img-profile {
     width: 45%;
-    height: 45%;
+    height: 100%;
     border-radius: 10px;
     margin-right: 5%;
 }
@@ -101,7 +101,9 @@
 .change-data-1 {
     display: flex;
     flex-direction: column;
-    margin-right: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 5%;
     width: 50%;
     height: 100%;
 }
@@ -109,6 +111,8 @@
 .change-data-2 {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
     width: 50%;
     height: 100%;
 }
@@ -140,7 +144,8 @@
     border: 1px solid #576476;
     border-radius: 10px;
     font-size: 15px;
-    width: 95%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .new-city {
@@ -148,7 +153,8 @@
     border-radius: 10px;
     font-size: 15px;
     margin-top: 10px;
-    width: 95%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .new-address {
@@ -156,7 +162,8 @@
     border-radius: 10px;
     font-size: 15px;
     margin-top: 10px;
-    width: 95%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .send-code {
@@ -164,9 +171,8 @@
     border-radius: 10px;
     font-size: 15px;
     margin-top: 10px;
-    margin-right: 10px;
-    width: 65%;
-    float: right;
+    margin-right: 5%;
+    width: 58.5%;
     background-color: #116E77;
     color: #fff;
 }
@@ -176,8 +182,7 @@
     border-radius: 10px;
     font-size: 15px;
     margin-top: 10px;
-    width: 35%;
-    float: left;
+    width: 29.5%;
 }
 
 .new-date {
@@ -185,7 +190,18 @@
     border-radius: 10px;
     font-size: 15px;
     margin-top: 10px;
-    /* width: 95%; */
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.new-select {
+    border: 1px solid #576476;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 30px;
 }
 
 .politics {
@@ -193,42 +209,28 @@
 }
 
 .new-save {
-    margin-top: 10px;
     border: 1px solid #576476;
     border-radius: 10px;
     font-size: 15px;
     margin-top: 10px;
-    margin-right: 10px;
-    width: 100%;
+    width: 48%;
     float: right;
     background-color: #116E77;
     color: #fff;
-}
-
-.new-button-change {
-    margin-top: 10px;
-    border: 1px solid #576476;
-    border-radius: 10px;
-    font-size: 15px;
-    margin-top: 10px;
-    margin-right: 10px;
-    width: 50%;
-    float: right;
-    background-color: #333F50;
-    color: #fff;
+    box-sizing: border-box;
 }
 
 .dell-account {
-    margin-top: 10px;
+    position: relative;
+    bottom: 0px;
     border: 1px solid #576476;
     border-radius: 10px;
     font-size: 15px;
     margin-top: 10px;
-    margin-right: 10px;
-    width: 50%;
-    float: right;
+    width: 48%;
     background-color: #7A231D;
     color: #fff;
+    box-sizing: border-box;
 }
 
 
