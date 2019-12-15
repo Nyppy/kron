@@ -1,0 +1,218 @@
+@media (min-width: 1000px) and (max-width: 2800px) {
+
+}
+
+@media only screen and (max-device-width: 480px) {
+  .wrapper {flex-direction: column;}
+  .how_work {width: 100% !important; margin: 0 20px 0 20px !important;}
+  .text_how {flex-direction: column; margin: 0 auto !important;}
+  .how_work span {margin: 0 auto 20px !important;}
+  .text_how_w {margin: 10px auto !important; width: 100% !important; text-align: center;}
+  .register-form {width: 100% !important; margin: 0 20px 40px 20px !important;}
+  .content_two {width: 100% !important; margin: 0 !important;}
+  .cont_two {margin: 0 auto !important; text-align: center !important;}
+  .cont_two p {text-align: center !important;}
+  .block_left {width: 100% !important;}
+  .block_right {width: 100% !important;}
+  .app_icon {margin: 0 auto !important; text-align: center !important;}
+  .code {width: 100% !important;}
+  .register {width: 100% !important;}
+  .date {margin: 5px auto !important; text-align: center;}
+  #pos-gender {text-align: center !important;}
+}
+
+.wrapper_reg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+}
+  
+ .register-form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 11%;
+    width: 20%;
+  }
+  
+ .inp_text {
+    width: 100%;
+    height: 25px;
+    margin-bottom: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    padding: 0;
+    padding-left: 5px;
+
+  }
+  
+  .date {
+    color: #000;
+    font-size: 15px;
+    /* width: 100%; */
+    height: 25px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding-left: 5px;
+  }
+  
+  .politics {
+    color: #7A231D;
+  }
+  
+  .code_button {
+    background-color: #7A231D;
+    border-radius: 6px;
+    color: #fff;
+    /* width: 100%; */
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 2%;
+    text-align: center;
+  }
+  
+  .register {
+    background-color: #116E77;
+    border-radius: 6px;
+    color: #fff;
+    width: 65%;
+    font-size: 16px;
+    margin-top: 5px;
+    cursor: pointer;
+    padding: 2%;
+    text-align: center;
+  }
+  
+  .code {
+    width: 25%;
+    height: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-right: 10px;
+    text-align: center;
+    margin-top: 5px;
+    padding: 5px;
+  }
+  
+  .how_work {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-right: 11%;
+    width: 50%;
+  }
+  
+  .text_how {
+    display: flex;
+    color: #576476;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+
+  .text_how_w {
+    width: 30%;
+  }
+  
+  .text_how span:not(:last-child) {
+    margin-right: 40px;
+  }
+  
+  .cont_two {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+  
+  }
+  
+  .hed_text {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #344051;
+    float: left;
+  }
+  
+  .hed_text_2 {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #344051;
+    float: left;
+  }
+  
+  .img_work {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 40px;
+    height: 50px;
+  }
+  
+  .hed_text_3 {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #344051;
+    float: left;
+  }
+  
+  .img_head_text {
+    width: 25px;
+    margin-right: 10px;
+  
+  }
+  
+  .img_hed_logo {
+    width: 130px;
+    float: right;
+  }
+  
+  .icon_s {
+    display: flex;
+  }
+  
+  .img_icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .social_icon {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  .block_left {
+    float: left;
+    width: 65%;
+  }
+  
+  .block_right {
+    float: right;
+    margin-top: 25px;
+  }
+  
+  .app_icon {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  
+  .img_icon_app {
+    margin-bottom: 15px;
+  }
+  
+  .content_two {
+    margin-top: 40px;
+  }
+  
+  .checkbox_pass {
+    margin-bottom: 10px;
+  }
+  

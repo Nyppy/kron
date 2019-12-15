@@ -1,0 +1,234 @@
+@media (min-width: 500px) and (max-width: 1000px) {
+
+}
+  
+@media only screen and (max-device-width: 480px) {
+    .pass-content-priv {flex-direction: column !important;}
+    #q1 {width: 100% !important;}
+    #q2 {margin: 0 !important;}
+    .kron-auto {width: 100% !important;}
+    .kron-ship {width: 100% !important;}
+    #q3 {min-height: 0 !important; height: 100% !important;}
+}
+
+.pass-content-priv {
+    margin: 0 5% 0 5%;
+    padding-top: 20px;
+    display: flex;
+    height: 100%;
+    /* flex-direction: column; */
+
+    flex-direction: row;
+}
+
+/* Ваши права */
+.wrapper_driver_pass {
+    display: flex;
+    flex-direction: column;
+    /* width: 28%; */
+
+    width: 100%;
+    height: 65%;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 0 2% 13px 0;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.driver-pass-inp {
+    border: 1px solid #576476;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 30px;
+    text-align: left;
+    padding-left: 5px;
+    line-height: 30px;
+}
+
+.save-driver-pass {
+    border: 1px solid #576476;
+    border-radius: 10px;
+    font-size: 15px;
+    width: 98%;
+    background-color: #116E77;
+    color: #fff;
+    margin: 10px 0 0 0;
+    padding: 1%;
+    cursor: pointer;
+    text-align: center;
+
+    margin-bottom: 10px;
+}
+
+.info-driver-pass {
+    font-size: 14px;
+    color: #333F50;
+}
+
+/* Приложение КРОН */
+.wrapper_app_two {
+    display: flex;
+    flex-direction: column;
+    /* width: 28%; */
+    width: 100%;
+
+    height: 30%;
+    border-radius: 10px;
+    background-color: #fff;
+    box-sizing: border-box;
+    margin: 0 2% 13px 0;
+    padding: 15px;
+}
+
+.app-text_ {
+    font-size: 14px;
+    margin-top: 0;
+    color: #333F50;
+}
+
+/* Kron Auto */
+.kron-auto {
+    display: flex;
+    flex-direction: column;
+    width: 64%;
+    height: 47.5%;
+    border-radius: 10px;
+    background-color: #fff;
+    box-sizing: border-box;
+    margin: 0 0 13px 0;
+    padding: 15px;
+}
+
+.auto-change-data-1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 5%;
+    width: 50%;
+    height: 100%;
+}
+
+.auto-change-data-2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.width-inp-auto {
+    border: 1px solid #576476;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+    width: 95%;
+    padding: 5px;
+}
+
+.number-auto {
+    border: 1px solid #576476;
+    border-radius: 10px;
+    font-size: 15px;
+    margin: 10px 10px 0 0;
+    width: 58%;
+    padding: 5px;
+}
+
+.region-auto {
+    border: 1px solid #576476;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+    width: 42%;
+    padding: 5px;
+}
+
+.disconnect-account {
+    border: 1px solid #576476;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 20%;
+    background-color: #7A231D;
+    color: #fff;
+    margin: 0;
+    padding: 0.5%;
+    cursor: pointer;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+/* Kron Ship */
+.kron-ship {
+    display: flex;
+    flex-direction: column;
+    width: 64%;
+    height: 47.5%;
+    border-radius: 10px;
+    background-color: #fff;
+    box-sizing: border-box;
+    margin: 0 0 13px 0;
+    padding: 15px;
+}
+
+.connect-account {
+    border: 1px solid #576476;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 20%;
+    background-color: #116E77;
+    color: #fff;
+    margin: 0;
+    padding: 0.5%;
+    cursor: pointer;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+.new-save-ship {
+    border: 1px solid #576476;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+    width: 48%;
+    float: right;
+    background-color: #116E77;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 1%;
+    text-align: center;
+    cursor: pointer;
+
+    pointer-events: none;
+    opacity: 0.4;
+}
+    
+.dell-account-ship {
+    border: 1px solid #576476;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+    width: 48%;
+    background-color: #7A231D;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 1%;
+    text-align: center;
+    cursor: pointer;
+
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+.change-data-position-two {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    justify-content: space-between;
+    margin-top: 0;
+}

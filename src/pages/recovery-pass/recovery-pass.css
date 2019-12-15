@@ -1,0 +1,129 @@
+@media (min-width: 1000px) and (max-width: 2800px) {
+
+}
+  
+@media only screen and (max-device-width: 480px) {
+	.content_form1 {width: 100% !important;}
+	.content_form2 {width: 100% !important;}
+	.rec_input {width: 95% !important;}
+	.rec_code_button {width: 100% !important; padding: 3% 0 3% 0 !important; margin-bottom: 10px;}
+	.rec_code {width: 95% !important;}
+	.rec_next {width: 100% !important; padding: 3% 0 3% 0 !important;}
+	.rec_pass {width: 95% !important;}
+	.rec_save {width: 100% !important; padding: 3% 0 3% 0 !important;}
+}
+
+
+.wrapper_recovery {
+    display: flex;
+    margin-left: 17%;
+    margin-right: 17%;
+    margin-bottom: 40px;
+	  margin-top: 40px;
+  }
+  
+  .content_form1 {
+    margin: 0 auto;
+    text-align: left;
+    display: block;
+  }
+  
+  .content_form2 {
+    margin: 0 auto;
+    text-align: left;
+    display: none;
+  }
+  
+  .rec_input {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 298px;
+    height: 30px;
+    font-size: 16px;
+    margin-top: 5px;
+    padding: 5px;
+  }
+  
+  .rec_pass {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 298px;
+    height: 30px;
+    font-size: 16px;
+    margin-top: 5px;
+    padding: 5px;
+  }
+  
+  .rec_code_button {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #116E77;
+    color: #fff;
+    width: 185px;
+    padding: 3%;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 5px;
+    float: left;
+    cursor: pointer;
+  }
+  
+  #error {
+    color: red;
+    font-size: 18px;
+    display: none;
+  }
+  
+  #error_pass {
+    color: red;
+    font-size: 18px;
+    margin: 5px 0 5px 0;
+    display: none;
+  }
+  
+  #error_pass2 {
+    color: red;
+    font-size: 18px;
+    margin: 5px 0 5px 0;
+    display: none;
+  }
+
+  .rec_code {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 90px;
+    height: 30px;
+    font-size: 16px;
+    margin-top: 5px;
+    float: right;
+    padding: 5px;
+  }
+  
+.rec_next {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #C5C5C5;
+    color: #fff;
+    width: 300px;
+    padding: 2%;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 5px;
+    float: left;
+    cursor: pointer;
+    pointer-events: none;
+}
+  
+  .rec_save {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #116E77;
+    color: #fff;
+    width: 296px;
+    padding: 2%;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+  
