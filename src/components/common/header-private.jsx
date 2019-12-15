@@ -31,8 +31,8 @@ class Dropdown extends Component {
         return (
             <div id="header-priv-menu" style={{zIndex: "99", marginRight: '10px', textAlign: "center", margin: "0 auto"}}>
                 <div>
-                    <span id="a1" onClick={this.toggleState} style={{color: '#fff', fontSize: "22px", zIndex:"99", display: "block", cursor: "pointer"}}>▼</span>
-                    <span id="a2" onClick={this.toggleState} style={{color: '#fff', fontSize: "22px", display: "none", cursor: "pointer"}}>▶</span>
+                    <span id="a1" onClick={this.toggleState} style={{color: '#fff', fontSize: "22px", zIndex:"99", display: "block", cursor: "pointer", marginRight: '10px'}}>▼</span>
+                    <span id="a2" onClick={this.toggleState} style={{color: '#fff', fontSize: "22px", display: "none", cursor: "pointer", marginRight: '10px'}}>▶</span>
                     <svg onClick={this.toggleState}  viewBox="64 64 896 896" focusable="false" class="modile-data" data-icon="menu" width="1em" height="1em" fill="currentColor" aria-hidden="true">
                         <path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path>
                     </svg>
@@ -72,7 +72,6 @@ const HeaderPrivate = (props) => {
                     <img src={props.img} alt=""/>
                 </div>
             </div>
-            <span id="menu-2"><Dropdown/></span>
         </div>   
     )
 }

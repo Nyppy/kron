@@ -6,15 +6,15 @@
 @media only screen and (max-device-width: 480px) {
   #a1 {display: none !important;}
   #a2 {display: none !important;}
-  .modile-data {display: block !important;}
+  .modile-data {display: block !important; margin: 0 0 0 -15px;}
   .private-wrapper {height: 70px !important;}
   #header-priv-menu {margin: 0 auto !important; display: flex; align-items: center; justify-content: center;}
   .user-name {font-size: 15px !important;}
   .user-data {font-size: 15px !important;}
   #height-menu {height: 115px !important;}
-  #qqq {margin-top: 85px !important; opacity: 0.9; width: 95% !important;}
+  #qqq {margin-top: 85px !important; opacity: 0.9; margin: 0 0 0 -10px;}
   .text-menu {margin-bottom: 4px !important;}
-  #menu-1 {display: none !important;}
+  #menu-1 {display: block !important; position: absolute; margin: 50px auto;}
   #menu-2 {display: block !important;}
 }
 

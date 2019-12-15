@@ -165,6 +165,7 @@
     border-radius: 10px;
     font-size: 15px;
     width: 95%;
+    padding: 5px;
 }
 
 .new-surname {
@@ -173,6 +174,7 @@
     font-size: 15px;
     margin-top: 10px;
     width: 95%;
+    padding: 5px;
 }
 
 .new-phone {
@@ -245,8 +247,9 @@
 .new-code {
     border: 1px solid #576476;
     border-radius: 10px;
-    font-size: 15px;
+    font-size: 14px;
     width: 29.5%;
+    padding-left: 5px;
 }
 
 .new-date {
@@ -422,6 +425,7 @@
     width: 100%;
     height: 70px;
     margin-bottom: 25px;
+    padding: 5px;
 }
 
 .quest-button {
@@ -462,6 +466,7 @@
     box-sizing: border-box;
     width: 100%;
     height: 30px;
+    padding: 5px;
 }
 
 .coupon-button {
