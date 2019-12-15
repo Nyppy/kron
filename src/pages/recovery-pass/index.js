@@ -5,9 +5,9 @@ import {Header, Footer} from '../../components/common';
 export default function RecoveryPass () {
     return (
         <div>
-            <Header />
+            {/* <Header /> */}
             <RecoveryPassContent />
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }

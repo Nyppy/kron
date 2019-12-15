@@ -59,10 +59,10 @@ class Content extends Component{
 
   render() {
     return (
-      <div className="wrapper">
+      <div className="wrapper_reg">
         <div className="register-form">
           <span style={{margin: "20px 0 10px 0", fontSize: "24px", color: '#344051'}}>Регистрация</span>
-          <form style={{display: "flex", flexDirection: "column"}}>
+          <form style={{display: "flex", flexDirection: "column", width: '100%'}}>
             <input type="text" ref={ref => this.name = ref} className="name inp_text" required placeholder="Ваше имя *"/>
             <input type="text" ref={ref => this.surname = ref} className="surname inp_text" required placeholder="Ваше фамилия *"/>
             <InputMask mask="+7(999)999-99-99" ref={ref => this.phone = ref} className="phone inp_text" maskChar={null} required placeholder="Ваш телефон *"/>
@@ -73,8 +73,8 @@ class Content extends Component{
               <input type="checkbox" className="checkbox_pass" onChange={this.changeShowPass} name="show_pass"/>Показать пароль
             </span>
             <span style={{marginBottom: "5px"}}>
-              <input className="date" required type="date"/>
-              <div style={{marginTop: "8px", fontSize: "18px"}}>
+              <input className="date" defaultValue="2013-01-08" required type="date"/>
+              <div id="pos-gender" style={{marginTop: "8px", fontSize: "18px"}}>
                 <input type="radio" defaultChecked onChange={() => {this.gender('male')}} name="sex"/>муж.
                 <input style={{marginLeft: "20px"}} onChange={() => {this.gender('female')}} type="radio" name="sex"/>жен.
               </div>
@@ -84,10 +84,10 @@ class Content extends Component{
               <span style={{fontSize: "14px"}}>Я принимаю условия<br/></span>
               <a href="" style={{fontSize: "14px"}}>«‎Соглашение на обработку персональных данных»‎</a>
             </span>
-            <input className="code_button" type="button" value="Отправить SMS-код"/>
-            <div style={{display: "flex"}}>
+            <a className="code_button">Отправить SMS-код</a>
+            <div style={{display: "flex", width: '100%'}}>
               <InputMask mask="999999" ref={ref => this.code = ref} className="code" maskChar={null} required placeholder="Код SMS"/>
-              <input type="button" onClick={this.validForm} className="register" value="Зарегистрироваться"/>
+              <a onClick={this.validForm} className="register">Зарегистрироваться</a>
             </div>
           </form>
         </div>
@@ -95,15 +95,15 @@ class Content extends Component{
         <div className="how_work">
           <span style={{fontSize: "22px", color: '#344051', fontWeight: 'bold'}}>Как мы работаем?</span>
           <div className="text_how">
-            <span style={{width:"30%"}}>
+            <span className="text_how_w">
               <img className="img_work" src={clipboard}/>
               1.Регестрируетеь в нашей системе
             </span>
-            <span style={{width:"30%"}}>
+            <span className="text_how_w">
               <img className="img_work" src={website}/>
               2.Получаете доступ к личному кабинету
             </span>
-            <span style={{width:"30%"}}>
+            <span className="text_how_w">
               <img className="img_work" src={mobile_network}/>
               3.Пользуетесь нашими услугами
             </span>
@@ -181,9 +181,9 @@ class MainRegister extends React.Component {
   render() {
     return (
       <div>
-        <Header />
+        {/* <Header /> */}
         <Content />
-        <Footer />
+        {/* <Footer /> */}
       </div>
     )
   }

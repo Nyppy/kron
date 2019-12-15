@@ -1,3 +1,43 @@
+@media (min-width: 500px) and (max-width: 1000px) {
+    .wrapper-content-priv {flex-direction: column;}
+    .cont-priv {flex-direction: column !important; width: 100% !important;}
+    .wrapper_history {flex-direction: column !important;}
+    .block-priv {flex-direction: column !important;}
+    .wrapper_img_profile {width: 100% !important;}
+    .wrapper_сhange_data {width: 100% !important;}
+    .wrapper_app {width: 100% !important;}
+    .wrapper_info {width: 100% !important;}
+    .wrapper_change_pass {width: 100% !important; margin-bottom: 13px !important;}
+    .wrapper_question {width: 100% !important; margin-bottom: 13px !important;}
+    .wrapper_coupon {width: 100% !important; margin-bottom: 13px !important;}
+    .wrapper_history {width: 100% !important;}
+    .send-code {width: 100% !important; margin: 0 0 10px 0 !important;}
+    .new-code {width: 100% !important;}
+    .change-data-1 span {width: 100% !important;}
+    .change-data-1 div {flex-wrap: inherit;}
+    .img-app {height: 50px !important;}
+}
+  
+@media only screen and (max-device-width: 480px) {
+    .wrapper-content-priv {flex-direction: column;}
+    .cont-priv {flex-direction: column !important; width: 100% !important;}
+    .wrapper_history {flex-direction: column !important;}
+    .block-priv {flex-direction: column !important;}
+    .wrapper_img_profile {width: 100% !important;}
+    .wrapper_сhange_data {width: 100% !important;}
+    .wrapper_app {width: 100% !important;}
+    .wrapper_info {width: 100% !important;}
+    .wrapper_change_pass {width: 100% !important; margin-bottom: 13px !important;}
+    .wrapper_question {width: 100% !important; margin-bottom: 13px !important;}
+    .wrapper_coupon {width: 100% !important; margin-bottom: 13px !important;}
+    .wrapper_history {width: 100% !important;}
+    .send-code {width: 100% !important; margin: 0 0 10px 0 !important;}
+    .new-code {width: 100% !important;}
+    .change-data-1 span {width: 100% !important;}
+    .change-data-1 div {flex-wrap: inherit;}
+    .img-app {height: 50px !important;}
+}
+
 .wrapper-content-priv {
     margin: 0 5% 0 5%;
     padding-top: 20px;
@@ -46,8 +86,8 @@
 }
 
 .img-profile {
-    width: 45%;
-    height: 100%;
+    width: 60%;
+    height: 90%;
     border-radius: 10px;
     margin-right: 5%;
 }
@@ -57,12 +97,15 @@
 }
 
 .custom-file-input {
-    width: 100%;
+    width: 96%;
     margin: 10px 0 10px 0;
     background-color: #333F50;
     color: #fff;
     border-radius: 10px;
-    font-size: 16px;
+    font-size: 15px;
+    padding: 2%;
+    text-align: center;
+    cursor: pointer;
 }
 
 .profile-data-info {
@@ -77,7 +120,7 @@
 }
 
 
-/* Смена личных двнных */
+/* Смена личных данных */
 .wrapper_сhange_data {
     display: flex;
     flex-direction: column;
@@ -138,6 +181,11 @@
     font-size: 15px;
     margin-top: 10px;
     width: 95%;
+    height: 30px;
+    text-align: left;
+    padding-left: 5px;
+    line-height: 30px;
+    overflow: hidden;
 }
 
 .new-email {
@@ -146,6 +194,11 @@
     font-size: 15px;
     width: 100%;
     box-sizing: border-box;
+    height: 30px;
+    text-align: left;
+    padding-left: 5px;
+    line-height: 30px;
+    overflow: hidden;
 }
 
 .new-city {
@@ -155,6 +208,11 @@
     margin-top: 10px;
     width: 100%;
     box-sizing: border-box;
+    height: 30px;
+    text-align: left;
+    padding-left: 5px;
+    line-height: 30px;
+    overflow: hidden;
 }
 
 .new-address {
@@ -164,24 +222,30 @@
     margin-top: 10px;
     width: 100%;
     box-sizing: border-box;
+    height: 30px;
+    text-align: left;
+    padding-left: 5px;
+    line-height: 30px;
+    overflow: hidden;
 }
 
 .send-code {
     border: 1px solid #576476;
     border-radius: 10px;
     font-size: 15px;
-    margin-top: 10px;
     margin-right: 5%;
-    width: 58.5%;
+    width: 58%;
     background-color: #116E77;
     color: #fff;
+    padding: 2%;
+    text-align: center;
+    cursor: pointer;
 }
 
 .new-code {
     border: 1px solid #576476;
     border-radius: 10px;
     font-size: 15px;
-    margin-top: 10px;
     width: 29.5%;
 }
 
@@ -192,6 +256,11 @@
     margin-top: 10px;
     box-sizing: border-box;
     width: 100%;
+    height: 30px;
+    text-align: left;
+    padding-left: 5px;
+    line-height: 30px;
+    overflow: hidden;
 }
 
 .new-select {
@@ -202,6 +271,10 @@
     box-sizing: border-box;
     width: 100%;
     height: 30px;
+    text-align: left;
+    padding-left: 5px;
+    line-height: 30px;
+    overflow: hidden;
 }
 
 .politics {
@@ -218,11 +291,12 @@
     background-color: #116E77;
     color: #fff;
     box-sizing: border-box;
+    padding: 1%;
+    text-align: center;
+    cursor: pointer;
 }
 
 .dell-account {
-    position: relative;
-    bottom: 0px;
     border: 1px solid #576476;
     border-radius: 10px;
     font-size: 15px;
@@ -231,13 +305,17 @@
     background-color: #7A231D;
     color: #fff;
     box-sizing: border-box;
+    padding: 1%;
+    text-align: center;
+    cursor: pointer;
 }
-
 
 /* Приложения крона */
 .wrapper_app {
+    display: flex;
+    flex-direction: column;
     width: 34%;
-    min-height: 150px;
+    min-height: 140px;
     border-radius: 10px;
     background-color: #fff;
     box-sizing: border-box;
@@ -245,56 +323,224 @@
     padding: 15px;
 }
 
+.app-text {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.img-app {
+    width: 100%;
+    height: 70%;
+    margin: 10px 0 0 0;
+}
+
 /* Информация */
 .wrapper_info {
+    display: flex;
+    flex-direction: column;
     width: 62%;
-    min-height: 150px;
+    min-height: 140px;
     border-radius: 10px;
     background-color: #fff;
     box-sizing: border-box;
     margin: 0 0 13px 0;
     padding: 15px;
+
+    background-color: rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+    opacity: 0.4;
 }
 
 /* Смена пароля */
 .wrapper_change_pass {
+    display: flex;
+    flex-direction: column;
     width: 34%;
-    min-height: 220px;
+    min-height: 260px;
     border-radius: 10px;
     background-color: #fff;
     box-sizing: border-box;
     margin: 0 2% 0 0;
     padding: 15px;
+}
+
+.style-b {
+    border: 1px solid #576476;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 30px;
+    text-align: left;
+    padding-left: 5px;
+    line-height: 30px;
+}
+
+.new-set-pass {
+    border: 1px solid #576476;
+    border-radius: 10px;
+    font-size: 15px;
+    width: 96%;
+    background-color: #116E77;
+    color: #fff;
+    margin: 10px 0 0 0;
+    padding: 2%;
+    cursor: pointer;
+    text-align: center;
 }
 
 /* Вопросы */
 .wrapper_question {
+    display: flex;
+    flex-direction: column;
     width: 30%;
-    min-height: 220px;
+    min-height: 260px;
     border-radius: 10px;
     background-color: #fff;
     box-sizing: border-box;
     margin: 0 2% 0 0;
     padding: 15px;
+}
+
+.quest-select {
+    border: 1px solid #576476;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 30px;
+}
+
+.quest-text {
+    border: 1px solid #576476;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 70px;
+    margin-bottom: 25px;
+}
+
+.quest-button {
+    border: 1px solid #576476;
+    border-radius: 10px;
+    font-size: 15px;
+    width: 96%;
+    background-color: #116E77;
+    color: #fff;
+    margin: 10px 0 0 0;
+    padding: 2%;
+    cursor: pointer;
+    text-align: center;
 }
 
 /* Купоны */
 .wrapper_coupon {
+    display: flex;
+    flex-direction: column;
     width: 30%;
-    min-height: 220px;
+    min-height: 260px;
     border-radius: 10px;
     background-color: #fff;
     box-sizing: border-box;
     margin: 0 2% 0 0;
     padding: 15px;
+
+    background-color: rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+.coupon-code {
+    border: 1px solid #576476;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 30px;
+}
+
+.coupon-button {
+    border: 1px solid #576476;
+    border-radius: 10px;
+    font-size: 15px;
+    width: 95%;
+    background-color: #116e77;
+    color: #fff;
+    margin: 48px 0 0 0;
+    padding: 2%;
+    cursor: pointer;
+    text-align: center;
 }
 
 /* История */
 .wrapper_history {
+    display: flex;
+    flex-direction: column;
     flex: 1 0 auto;
     width: 36vw;
     border-radius: 10px;
     box-sizing: border-box;
     background-color: #fff;
     padding: 15px;
+}
+
+.table-history {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin: 10px 0 0 0;
+}
+
+.header-table {
+    font-size: 14px;
+    color: #A3A3A3;
+    text-align: center;   
+}
+
+.header-table td {
+    padding-bottom: 10px;
+}
+
+.table-history-col {
+    font-size: 14px;
+    color: #576476;
+    text-align: center;
+}
+
+.table-history-col td {
+    border-top: 1px solid #A3A3A3;
+    border-bottom: 1px solid #A3A3A3;
+    padding: 0 3px 0 3px;
+    cursor: pointer;
+    height: 35px;
+}
+
+td {
+    width: 16%;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+}
+
+.table-history-col:hover {
+    background-color: #116E77;
+    color: #fff;
+}
+
+.download-history {
+    border: 1px solid #576476;
+    border-radius: 10px;
+    font-size: 15px;
+    width: 60%;
+    background-color: #116e77;
+    color: #fff;
+    margin: 10px auto;
+    padding: 1%;
+    cursor: pointer;
+    text-align: center;
 }

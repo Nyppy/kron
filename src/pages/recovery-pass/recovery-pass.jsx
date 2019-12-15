@@ -23,6 +23,7 @@ class Content extends React.Component {
 
     if (this.state.code.length >= 10) {
       document.getElementById("rec_next").style.backgroundColor = "#116E77";
+      document.getElementById("rec_next").style.pointerEvents = "all";
     } else {
       document.getElementById("rec_next").style.backgroundColor = "#C5C5C5";
     }
@@ -67,6 +68,12 @@ class Content extends React.Component {
         "document.getElementById('error_pass').style.display = 'none'",
         4000
       );
+    } else if (pass1 === '' || pass2 === '') {
+      document.getElementById("error_pass2").style.display = "block";
+      setTimeout(
+        "document.getElementById('error_pass').style.display = 'none'",
+        4000
+      );
     } else {
       window.location.href = "/login";
     }
@@ -74,12 +81,12 @@ class Content extends React.Component {
 
   render() {
     return (
-      <div className="wrapper">
+      <div className="wrapper_recovery">
         <div className="content_form1" id="content_form1">
           <span style={{ color: "#194146", fontSize: "20px" }}>
             Восстановление пароля
           </span>
-          <form style={{ display: "flex", flexDirection: "column" }}>
+          <form style={{ display: "flex", flexDirection: "column", width: '100%' }}>
             <InputMask
               mask="+7(999)999-99-99"
               className="rec_input"
@@ -91,12 +98,7 @@ class Content extends React.Component {
             />
             <p id="error">Введите коректный номер телефона!</p>
             <div style={{ margin: "10px 0 10px 0" }}>
-              <input
-                type="button"
-                onClick={this.sendCode}
-                className="rec_code_button"
-                value="Отправить SMS"
-              />
+              <a onClick={this.sendCode} className="rec_code_button">Отправить SMS</a>
               <InputMask
                 mask="9 9 9 9 9 9"
                 className="rec_code"
@@ -107,13 +109,7 @@ class Content extends React.Component {
                 placeholder="Код из SMS"
               />
             </div>
-            <input
-              type="button"
-              onClick={this.next}
-              id="rec_next"
-              className="rec_next"
-              value="Продолжить"
-            />
+            <a onClick={this.next} id="rec_next" className="rec_next"> Продолжить </a>
           </form>
         </div>
 
@@ -137,12 +133,8 @@ class Content extends React.Component {
               placeholder="Повторите пароль *"
             />
             <p id="error_pass">Пароли не совпдают!</p>
-            <input
-              type="button"
-              onClick={this.save}
-              className="rec_save"
-              value="Сохранить"
-            />
+            <p id="error_pass2">Введите пароль!</p>
+            <a onClick={this.save} className="rec_save">Сохранить</a>
           </form>
         </div>
       </div>

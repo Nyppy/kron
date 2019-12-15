@@ -5,6 +5,7 @@ import Login from './pages/login';
 import Registry from './pages/registry';
 import RecoveryPass from './pages/recovery-pass';
 import PrivatOffice from './pages/private-office';
+import PrivatOfficeDriver from './pages/private-office-driver';
 
 import './App.css';
 
@@ -23,6 +24,9 @@ function App() {
           </Route>
           <Route path='/private_office'>
             <PrivatOffice />
+          </Route>
+          <Route path='/private_office_driver'>
+            <PrivatOfficeDriver />
           </Route>
       </Switch>
     </Router>

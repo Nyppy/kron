@@ -7,9 +7,9 @@ import { Header, Footer } from "../../components/common";
 const Login = () => {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <Content />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
